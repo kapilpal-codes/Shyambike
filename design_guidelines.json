@@ -1,0 +1,82 @@
+{
+  "theme_type": "balanced",
+  "typography": {
+    "fonts_to_import": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap",
+    "primary_heading": "Oswald, sans-serif",
+    "hindi_heading": "Noto Sans Devanagari, sans-serif",
+    "body": "Manrope, sans-serif",
+    "instructions": "Replace Anton and IBM Plex with Oswald and Manrope. Use Oswald for English uppercase/bold headings to convey a structured, mechanical, premium feel. Use Noto Sans Devanagari for Hindi. Use Manrope for body text. Ensure tight tracking (-tracking-tight) on large Oswald headings."
+  },
+  "colors": {
+    "strategy": "Gunmetal & Amber. A balanced mix of warm off-white (light sections) and deep slate (dark sections) for broad appeal, swapping out the previous pure dark theme. Accent color shifts from pure red to a more premium, mature Burnt Orange/Amber.",
+    "palette": {
+      "background_light": "#F5F5F3",
+      "background_dark": "#181A1B",
+      "surface_light": "#FFFFFF",
+      "surface_dark": "#242628",
+      "primary_accent": "#EA580C",
+      "text_on_light": "#1C1E21",
+      "text_on_dark": "#F3F4F6",
+      "muted_on_light": "#6B7280",
+      "muted_on_dark": "#9CA3AF",
+      "border_light": "#E5E7EB",
+      "border_dark": "#374151"
+    },
+    "css_variables_update": "Update index.css to reflect the new balanced palette. Remove pure black backgrounds. Create utilities for alternating section background colors."
+  },
+  "visual_enhancers": {
+    "textures": "Keep the grain overlay but reduce opacity to 3% for a subtle mechanical grit without dirtying the light theme.",
+    "borders": "Use mechanical 1px solid borders (`border-gray-200` on light, `border-gray-700` on dark) to define sections. Avoid heavy drop shadows; prefer flat, structural UI.",
+    "border_radius": "Keep it sharp or very minimal (2px - 4px). Use `rounded-none` or `rounded-sm` max to maintain the industrial garage aesthetic.",
+    "gradients": "No rainbow gradients. Use subtle linear gradients ONLY for image overlays (e.g., black to transparent to ensure white text readability)."
+  },
+  "layouts_and_spacing": {
+    "rhythm": "Alternate between background_light and background_dark for different sections to create the 'balanced' 90% appeal look.",
+    "hero": "Dark section with the cinematic black sports bike image, overlay with subtle gradient. Kinetic typography stays.",
+    "marquee": "Amber or Dark background. High contrast.",
+    "about_section": "Light section. Use structural bento-like grid to combine the mechanic image with the service manifesto.",
+    "testimonials": "Light or slightly offset gray section. Clean, professional review cards.",
+    "contact": "Dark section to blend with the dark-styled Google Map seamlessly."
+  },
+  "motion": {
+    "lenis": "Maintain smooth scrolling.",
+    "framer_motion": "Keep existing section reveal animations (fade in, slight slide up). Add subtle scale on hover for brand cards and testimonials.",
+    "fast_marquee": "Keep marquee continuous and smooth."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1571646059462-99317ec8d1bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwbW90b3JjeWNsZSUyMGdhcmFnZXxlbnwwfHx8fDE3ODY4OTU1NzZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Parked black sports bike in a premium setting. Use this as the cinematic hero background with a dark/transparent overlay to ensure text contrast."
+    },
+    "mechanic_about": {
+      "url": "https://images.unsplash.com/photo-1636761358757-0a616eb9e17e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxtb3RvcmN5Y2xlJTIwbWVjaGFuaWMlMjB3b3JraW5nfGVufDB8fHx8MTc4Njg5NTU3Nnww&ixlib=rb-4.1.0&q=85",
+      "description": "Professional mechanic working on a motorcycle. Use in the About/Manifesto section."
+    },
+    "testimonial_1": {
+      "url": "https://images.unsplash.com/photo-1606927131353-c0ad17d60b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xpc3QlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODY4OTU1NzZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Motorcyclist portrait 1 for review card."
+    },
+    "testimonial_2": {
+      "url": "https://images.unsplash.com/photo-1591216105236-5ba45970702a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwyfHxtb3RvcmN5Y2xpc3QlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODY4OTU1NzZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Motorcyclist portrait 2 for review card."
+    }
+  },
+  "specific_instructions_to_main_agent": [
+    "Do NOT change the functional structure, data-testids, or remove the WhatsApp/Call floating buttons.",
+    "Update index.css variables to reflect the balanced Gunmetal & Amber theme. Ensure CSS class `.pulse-ring-green` remains for WhatsApp (#25d366).",
+    "Replace the pure dark theme with alternating light and dark sections to achieve the user's 'balanced' request.",
+    "Use Oswald for English headings, Noto Sans Devanagari for Hindi, and Manrope for body text.",
+    "In the hero section, replace the old hero image with the provided cinematic black sports bike image. Use a gradient overlay (e.g., from black to transparent) to ensure the kinetic typography is readable.",
+    "For the About section, use a light theme background (e.g., slate-50) and structure the content with crisp, 1px borders.",
+    "Maintain the dark theme map in the Contact section, so make the Contact section's background dark to blend smoothly.",
+    "Update the primary CTA color to the new accent (Orange/Amber).",
+    "Make sure the 'Rate us on Google' and all other existing interactive elements stay intact."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts. Maintain the Awwwards-style typography and spacing.",
+    "Use generous padding (py-24, py-32) to separate sections.",
+    "Never use AI emoji characters.",
+    "Ensure contrast is APCA/WCAG compliant across all text over backgrounds.",
+    "Add transition effects on hover for buttons, cards, and links."
+  ]
+}
